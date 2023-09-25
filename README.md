@@ -48,8 +48,12 @@ The user settings (User Configuration section) are stored in `%SystemRoot%\Syste
 @REM "RD" = Removes (deletes) a directory.
 RD /S /Q "%WinDir%\System32\GroupPolicyUsers" && RD /S /Q "%WinDir%\System32\GroupPolicy" 
 
-@REM OR
+gpupdate /force
+```
 
+OR
+
+```batch
 RD /S /Q "%WinDir%\System32\GroupPolicyUsers"
 RD /S /Q "%WinDir%\System32\GroupPolicy"
 
